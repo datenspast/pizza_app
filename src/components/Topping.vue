@@ -1,5 +1,7 @@
 <template>
-    <div>
+    <div class="px-5 ">
+        
+        <div class="v-subheader theme--light">SELECT TOPPINGS</div>
         <v-switch
             v-model="vegi"
             :label="vegiSwitchLabel"
