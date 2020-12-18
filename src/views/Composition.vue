@@ -81,17 +81,11 @@
                         class="mb-12"
                         :color="backgroundColor"
                         :height="height"
-                        ></v-card>
-
-                    <v-btn
-                        x-large
-                        dark
-                        @click="e1 = 3"
-                    
-                        class="float-right"
                         >
-                        Continue
-                        </v-btn>
+                        <Topping/>
+                        </v-card>
+
+                    
                     </v-stepper-content>
                     </v-stepper-items>
                 </v-stepper>
@@ -110,13 +104,15 @@
 
 import Style from '@/components/Style.vue'
 import Dough from '@/components/Dough.vue'
+import Topping from '@/components/Topping.vue'
 import Summary from '@/components/Summary.vue'
 
   export default {
     components: {
         Style,
         Dough,
-        Summary
+        Summary,
+        Topping,
     },
     data () {
       return {
