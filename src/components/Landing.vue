@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid fill-height class="home imgTransition">
+  <v-container fluid fill-height :class="$vuetify.breakpoint.xs ? 'home klein': 'home'">
     <v-container>
     <v-layout justify-center align-center column pa-5 welcomeBanner>
       <div class="display-4 font-weight-black text-center" >
@@ -34,6 +34,9 @@ export default {
   background-size: auto;
   width: 100%;
   min-height: 1400px;
+}
+.klein {
+  display: block !important;
 }
 .imgTransition{
     -webkit-transition: background-image 0.5s ease-in-out;
